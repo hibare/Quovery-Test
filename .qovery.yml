@@ -1,7 +1,7 @@
 ---
 application:
   name: "quovery-test"
-  project: "Moni"
+  project: "Tests"
   organization: "QoveryCommunity"
 routers:
 - name: "main-quovery-test"
