@@ -1,0 +1,11 @@
+---
+application:
+  name: "quovery-test"
+  project: "Moni"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-quovery-test"
+  routes:
+  - application_name: "quovery-test"
+    paths:
+    - "/*"
