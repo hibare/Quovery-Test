@@ -3,13 +3,6 @@ application:
   name: "quovery-test"
   project: "Tests"
   organization: "QoveryCommunity"
-<<<<<<< HEAD
-databases:
-- type: postgresql
-  version: "13"
-  name: db
-=======
->>>>>>> 3b3adddf84a468cb820062547ec8b3f749465b3b
 routers:
 - name: "main-quovery-test"
   routes:
