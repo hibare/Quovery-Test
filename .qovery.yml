@@ -5,7 +5,7 @@ application:
   organization: "QoveryCommunity"
 databases:
   - type: postgresql
-    version: "13"
+    version: "11.5"
     name: db
 routers:
   - name: "main-quovery-test"
