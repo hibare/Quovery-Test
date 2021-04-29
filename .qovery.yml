@@ -8,7 +8,7 @@ databases:
   name: "pgdb"
   version: "12"
 - type: "REDIS"
-  name: "redis"
+  name: "0"
   version: "6"
 routers:
 - name: "main-quovery-test"
