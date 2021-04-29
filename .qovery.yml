@@ -4,12 +4,15 @@ application:
   project: "Tests"
   organization: "QoveryCommunity"
 databases:
-  - type: postgresql
-    version: "11.5"
-    name: db
+- type: "POSTGRESQL"
+  name: "pgdb"
+  version: "12"
+- type: "REDIS"
+  name: "redis"
+  version: "6"
 routers:
-  - name: "main-quovery-test"
-    routes:
-    - application_name: "quovery-test"
-      paths:
-      - "/*"
+- name: "main-quovery-test"
+  routes:
+  - application_name: "quovery-test"
+    paths:
+    - "/*"
