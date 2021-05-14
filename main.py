@@ -1,3 +1,4 @@
+import os
 from typing import Optional
 
 from fastapi import FastAPI
@@ -8,6 +9,16 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+
+@app.get("/env")
+def get_env():
+    result = dict()
+    for k, v in os.environ.items():
+        result.update({
+            k:v
+        })
+    return result
+
 
 
 @app.get("/items/{item_id}")
