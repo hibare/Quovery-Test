@@ -13,5 +13,7 @@ RUN pip install -r requirements.txt
 
 EXPOSE 80
 
+RUN export REDIS_URL=$QOVERY_DATABASE_0_CONNECTION_URI
+
 # Run the command on container startup
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
